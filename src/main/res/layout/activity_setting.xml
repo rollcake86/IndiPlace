@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/concert"
+    android:orientation="vertical">
+
+
+    <FrameLayout
+        android:background="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/top_menu_height"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/backBtn"
+            android:layout_width="@dimen/top_menu_height"
+            android:layout_height="@dimen/top_menu_height"
+            android:layout_gravity="start"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/setting"
+            android:textColor="@color/app_text_color"
+            android:textSize="20dp" />
+
+    </FrameLayout>
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+            android:background="@drawable/main_back_round_rect"
+            android:id="@+id/push_text"
+            android:text="푸쉬 허용"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/app_text_color"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+
+        <Switch
+            android:layout_marginRight="20dp"
+            android:id="@+id/pushSwitch"
+            android:checked="true"
+            android:textColor="#ffffff"
+            android:textOn="푸쉬 허용"
+            android:textOff="푸쉬 정지"
+            style="@style/profile_text"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+
+    </LinearLayout>
+
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/logoutBtn"
+        android:textSize="18dp"
+        android:textColor="@color/app_text_color"
+        android:background="@drawable/main_back_round_rect"
+        android:text="로그아웃"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <Button
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/removeBtn"
+        android:textSize="18dp"
+        android:textColor="@color/app_text_color"
+        android:background="@drawable/main_back_round_rect"
+        android:text="회원탈퇴"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+</LinearLayout>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_singer"
+            android:title="가수 검색" />
+        <item
+            android:id="@+id/nav_concert"
+            android:title="공연 검색" />
+        <item
+            android:id="@+id/nav_setting"
+            android:title="설정" />
+    </group>
+
+    <item android:title="아티스트">
+        <menu>
+            <item
+                android:id="@+id/nav_artist_insert"
+                android:title="아티스트 등록" />
+            <item
+                android:id="@+id/nav_artist_profile"
+                android:title="아티스트 프로필 수정" />
+            <item
+                android:id="@+id/nav_insert"
+                android:title="공연등록" />
+        </menu>
+    </item>
+
+</menu>
